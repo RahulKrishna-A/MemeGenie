@@ -6,13 +6,15 @@ export default function Meme(){
         bottomText: "",
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
-    // const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
-    // function getMemeImage() {
-    //     const memesArray = allMemeImages.data.memes
-    //     const randomNumber = Math.floor(Math.random() * memesArray.length)
-    //     setMemeImage(memesArray[randomNumber].url)
-    // }
+    function handleChange(e){
+        setMeme((prevState)=>{
+            return { ...prevState,
+                 [e.target.name]:e.target.value
+            }
+        })
+    }
+
 
 
     return(
@@ -20,12 +22,16 @@ export default function Meme(){
         <div id={"meme_container"}>
         <div>
             <div>
-            <input type={"text"} id={"Field-1"}/>
-            <input type={"text"} id={"Field-2"}/>
+            <input onChange={handleChange} value={meme.topText} name={"topText"} type={"text"} id={"Field-1"} placeholder={"Top text"}/>
+            <input onChange={handleChange} value={meme.bottomText} name={"bottomText"} type={"text"} id={"Field-2"} placeholder={"Bottom text"}/>
             </div>
             <input type={"submit"} value={"Get your Meme Image"}/>
         </div>
+            <div className={"meme"}>
+                <p className={"meme_text top"}>Hello everyone</p>
+                <p className={"meme_text bottom"}>How are you</p>
             <img src={meme.randomImage} id={"meme_img"}/>
+            </div>
             </div>
     )
 }
