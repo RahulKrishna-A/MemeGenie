@@ -33,17 +33,17 @@ input[type="submit"]:hover{
     position: relative;
 }
 #meme_img{
-    height: 40vh;
-    width:28rem;
-    margin-left: 2rem;
+    /*height: 40vh;*/
+    /*width:28rem;*/
+    margin-left: 3.5rem;
     margin-top: 2rem;
     border: 2px solid black;
+    max-width: 35rem;
 }
 
 .meme_text {
 
     position: absolute;
-    width: 80%;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
@@ -56,6 +56,8 @@ input[type="submit"]:hover{
     letter-spacing: 1px;
     text-shadow: 2px 2px 0 #000,
     -2px -2px 0 #000;
+    max-width: 33rem;
+    text-overflow: ellipsis;
 }
 
 .top{
