@@ -1,18 +1,19 @@
-nav{
+nav {
     font-family: 'Agdasima', sans-serif;
     height: 5rem;
     color: rgb(0, 0, 0);
 }
 
-.navcontent{
+.navcontent {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 1rem;
-    padding-top: 1rem ;
+    padding-top: 1rem;
 
 }
-.navcontent p{
+
+.navcontent p {
     font-size: 2rem;
     font-weight: 800;
 }

@@ -1,7 +1,7 @@
 import "./hero.css"
 
 
-export default function Hero(){
+export default function Hero() {
     return (
         <div id={"hero_container"}>
             <div className={"hero_text"}>
