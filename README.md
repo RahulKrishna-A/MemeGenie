@@ -36,4 +36,4 @@ In order to setup and work on this project on your own, you will need to:
 `npm install`
 
 3. A live demo of the project can be started by using:
-`npm run dev`
+`npm run dev`  
